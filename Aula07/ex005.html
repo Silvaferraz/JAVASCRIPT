@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .operador{
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        #texto{
+            font-size: 1.2em;
+            font-family:  Arial, Helvetica, sans-serif;
+            margin: 0px;
+        }
+        
+    </style>
+    <title>Operedores</title>
+</head>
+<body>
+    <h1>Operadores em JavasScript</h1>
+    <ul>
+        <li class="operador">Aritméticos</li>
+<pre id="texto">
+
++ --> Adição
+- --> Subtração
+* --> Multiplicação
+/ --> Divisão
+% --> Resto da divisão inteira
+** --> Potência
+
+    <strong>Ordem de precedência:</strong>
+-> ()
+-> **
+-> *, /, %
+-> +, -
+</pre>
+        <li class="operador">Atribuição</li>
+<pre id="texto">
+
+Auto-atribuições:
+var n = 3
+n= n+3 -> n, valia 3, agora esta valendo 6, e asssim sucessivamente enquanto utilizarmos estas auto-atribuiçoões
+Simplificando:
+n += 4 -> somente se a variável recebe ela mesmo + 4
+
+</pre>
+        <li class="operador">Relacionais</li>
+<pre id="texto">
+Todo valor que será respondido por esses relacionais é boolean ou seja true or false
+<ul>
+<li> > Maior</li>
+<li> < Menor</li>
+<li> >= Maior ou igual</li>
+<li> <= Menor ou igual</li>
+<li> == Igual</li>
+<li> != Não igual/diferente</li>
+</ul>
+<strong>Operador de Identidade: </strong>
+Mesmo valor e mesmo tipo, 
+ex: 5==='5' --> false, um é number e outro é string
+    5===5 --> true
+    5!=='5' --> true
+
+</pre>
+        <li class="operador">Lógicos</li>
+<pre id="texto">
+<ul>
+<li> ! negação (true ou false)</li>
+<li> && conjunção (e) basta que um seja falso pra que seja falso</li> 
+<li> || disjunção (ou) basta que um seja verdadeiro pra que seja verdadeiro</li>
+</ul>
+</pre>
+<p style="font-size: 1.3em;font-weight: bold;">Ordem de sequencias dos operadores se eles estiverem relacionados:</p>
+<pre id="texto"> 
+<ol>
+<li>Aritméticos</li>
+<li>Relacionais</li>
+<li>Lógicos
+<ul type="disc">
+<li>1° - !</li>
+<li>2° - &&</li>
+<li>3° - ||</li>
+</ul>
+</ol>
+</pre>
+<pre id="texto">
+<li class="operador">Ternário</li>
+Opradoor ternário como o próprio nome ja diz possui 3 etapas e é dado assim:
+<strong>Teste?True:False</strong>
+Se estabelece oq deseja fazer, dependendo doq foi dito, ele irá mostrar um Valor "True" ou "False"
+    <i>Ex:</i> <pre>
+        var media = 5
+        
+        média >= 7?'Aprovado':'Reprovado'
+        
+        Reprovado
+    </pre>
+</pre>
+    </ul>
+</body>
+</html>
