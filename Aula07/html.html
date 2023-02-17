@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudando DOM</title>
+
+<style>
+    body{
+        background-color: rgb(68, 125, 199);
+        color: white;
+        font: normal 18pt Arial;
+    }
+
+div{
+    background-color: blue;
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px;
+    text-align: center;
+}
+
+div:hover{
+    background-color: rgb(223, 223, 255);
+    color: black;
+    transition: 0.3s;
+    cursor: pointer;
+    font-size: 2em;
+}
+
+</style>
+
+</head>
+<body>
+    <h1>Iniciando estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p> Aprendendo a usar o <strong> DOM </strong> em JavaScript.</p>
+        <div class="msg">
+            Clique em mim
+        </div>
+<h2>Selecionando elementos</h2>
+<p>
+    <ol>
+        <li>Por Marca => getElementsByTagName() usando colchete pra mais de um objeto.
+        <li>Por ID => getElementById()
+        <li>Por Nome => getElementsByName() usando colchete pra mais de um objeto.
+        <li>Por Classe => getElementsByClassName
+        <li>Por Seletor => querySelector()
+                        => querySelectorAll()
+    </ol>
+</p>
+<script>
+    
+    /* window.confirm('Você está aprendendo sobre JavaScript?')
+     
+    window.confirm('Gostaria de ver mais contéudos como esse?') */
+     
+     var p1 = window.document.getElementsByTagName('p')[1] /*Os colchetes servem pra idnicar qual paragrafo vai ser usado nesse caso, 0 é o primeiro e asssim sucetivamente.*/
+    
+     var corpo = window.document.body
+     
+     document.write(p1.innerText) /*serve pra mostrar apenas o conteudo texto*/
+
+     /*window.alert(p1.innerHTML)*/ /*Serve pra mostrar a formatação que foi feita em HTML*/
+
+    /*var d = window.document.getElementById('msg')
+    d.style.background = 'green'
+    d.style.color = 'white'
+    d.innerText = 'Estou aguardando...'*/
+
+    var d = window.document.querySelector('div.msg')
+    
+    d.style.background = 'lightpink'
+
+
+ </script>
+</body>
+</html>
